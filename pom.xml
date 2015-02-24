@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.nfw.study</groupId>
+  <artifactId>akka</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+    <scala.tools.version>2.10</scala.tools.version>
+    <akka.version>2.3.8</akka.version>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+        <groupId>com.typesafe.akka</groupId>
+        <artifactId>akka-camel_${scala.tools.version}</artifactId>
+        <version>${akka.version}</version>
+    </dependency>
+  </dependencies>
+
+</project>
