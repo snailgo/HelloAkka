@@ -1,4 +1,4 @@
-package akka
+package example.hello
 
 import akka.actor.Actor
 import akka.actor.ActorSystem
@@ -13,7 +13,7 @@ class HelloActor(myName: String) extends Actor {
 
 object Main extends App {
   val system = ActorSystem("HelloSystem")
-  val helloActor = system.actorOf(Props(new HelloActor("Pengfei")), name = "helloactor")
+  val helloActor = system.actorOf(Props(new HelloActor("snail")), name = "helloactor")
   helloActor ! "hello"
   helloActor ! "buenos dias"
   system.shutdown()
